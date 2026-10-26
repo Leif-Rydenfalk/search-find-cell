@@ -24,3 +24,12 @@ code_call {"cell": "search.find", "input": {"q": "rate limit", "kind": "all", "k
 Built 2026-10-26 08:40 +08: 33 threads, 97 tools.
 
 MIT.
+
+## Live search, today
+
+Cells have no network, so `search.find` answers from a baked snapshot. For live results, use
+`tools/ce_search.py` (no dependencies; needs an agent key for the threads):
+
+```
+python3 tools/ce_search.py "rate limit" --agent-key cen_... --k 5
+```

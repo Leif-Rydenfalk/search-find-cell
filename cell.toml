@@ -1,0 +1,6 @@
+# search.find — one ranked answer over the threads and the cell registry.
+name = "search.find"
+
+[api]
+input = "{\"q\": string, \"kind\": string, \"k\": number}"
+output = "{\"q\": string, \"hits\": [{\"kind\": string, \"id\": string, \"title\": string, \"score\": number, \"why\": string, \"call\": string}], \"n\": number}"
